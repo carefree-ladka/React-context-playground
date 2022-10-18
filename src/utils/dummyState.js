@@ -36,7 +36,6 @@ const dummyState = {
     projects: { text: "Projects" },
     calender: { text: "Calender" },
   },
-  activeLink: "dashboard",
   isInViewMode: true,
 };
 

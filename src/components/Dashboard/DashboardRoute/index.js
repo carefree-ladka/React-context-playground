@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import DashboardContext from "../../../context/context";
 import bodyIcons from "../../../utils/bodyIcons";
-import styles from "./Dashboard.module.css";
+import styles from "./DashboardRoute.module.css";
 
-export default function Dashboard() {
+export default function DashboardRoute() {
   const { data, isInViewMode } = useContext(DashboardContext);
 
   return (

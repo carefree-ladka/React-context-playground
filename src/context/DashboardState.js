@@ -8,10 +8,6 @@ export default function DashboardState(props) {
   const initialState = dummyState;
   const [state, dispatch] = useReducer(DashboardReducer, initialState);
 
-  const setActiveLink = (link) => {
-    dispatch({ type: types.ACTIVE_LINK, payload: link });
-  };
-
   const setInViewMode = () => {
     dispatch({ type: types.IN_VIEW_MODE });
   };
@@ -20,9 +16,7 @@ export default function DashboardState(props) {
     <DashboardContext.Provider
       value={{
         data: state.dashboardState,
-        activeLink: state.activeLink,
         isInViewMode: state.isInViewMode,
-        setActiveLink,
         setInViewMode,
       }}
     >

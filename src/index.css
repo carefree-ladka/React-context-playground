@@ -12,7 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #edeef0;
   scroll-padding-top: 53px;
-  overflow: hidden;
 }
 
 .container {

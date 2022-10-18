@@ -16,6 +16,7 @@
   color: #111;
   cursor: pointer;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .leftSidebar-link-active-link {
