@@ -16,8 +16,10 @@ import Calender from "./components/Dashboard/Calender";
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
+      {/* <Route index element={<Dashboard />} /> */}
       <Route path="/" element={<Dashboard />}>
-        <Route path="dashboard" element={<DashboardRoute />} />
+        <Route index element={<DashboardRoute />} />
+        <Route path="/dashboard" element={<DashboardRoute />} />
         <Route path="team" element={<Team />} />
         <Route path="projects" element={<Projects />} />
         <Route path="calender" element={<Calender />} />
