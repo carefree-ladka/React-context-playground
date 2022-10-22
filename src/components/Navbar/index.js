@@ -11,6 +11,7 @@ export default function Navbar() {
         <div className={styles["navbar-content"]}>
           <h3>React Context Playground</h3>
           <Button
+            className={styles.button}
             text={isInViewMode ? "Switch to Edit Mode" : "Switch to View Mode"}
             setInViewMode={setInViewMode}
           />
