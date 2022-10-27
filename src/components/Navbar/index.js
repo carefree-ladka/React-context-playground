@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import DashboardContext from "../../context/context";
+import useDashboard from "../../hooks/useDashboard";
 import Button from "../Button";
 import styles from "./Navbar.module.css";
 export default function Navbar() {
-  const { setInViewMode, isInViewMode } = useContext(DashboardContext);
+  const { setInViewMode, isInViewMode } = useDashboard();
 
   return (
     <header>

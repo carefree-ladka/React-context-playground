@@ -1,12 +1,11 @@
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import DashboardContext from "../../../context/context";
+import useDashboard from "../../../hooks/useDashboard";
 import icons from "../../../utils/icons";
 import toUppercaseWord from "../../../utils/utils";
 import styles from "./LeftSidebar.module.css";
 
 export default function LeftSidebar() {
-  const { data } = useContext(DashboardContext);
+  const { data } = useDashboard();
 
   return (
     <section className={styles.leftSidebar}>
